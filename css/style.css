@@ -16,8 +16,34 @@ body {
     flex-wrap: wrap;
 }
 
-/* command bar */
+
+.name {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 30px;
+    width: fit-content;
+    display: block;
+    background-color: rgba(125, 125, 125, 0.6);
+    position: relative;
+    bottom: 40px;
+    color: white;
+    font-size: 12px;
+}
+
+.muted {
+    height: 15px;
+    position: relative;
+    right: 220px;
+    bottom: 12px;
+    z-index: 1;
+}
+
+
+/* bottom command bar */
 nav {
+    position: fixed;
+    bottom: 0;
     font-size: 10px;
     color: white;
     display: flex;
@@ -26,7 +52,8 @@ nav {
     align-items: center;
     background-color: #222222;
     height: 70px;
-    width: 100vp;
+    width: 100%;
+    z-index: 2;
 }
 
 .cameraandmic,
@@ -41,7 +68,7 @@ svg {
     padding-left: 20px;
     padding-right: 20px;
     fill: white;
-    height: 30px;
+    height: 25px;
     margin-bottom: 5px;
 }
 
